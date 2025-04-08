@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap');
+@import "tailwindcss";
+@import "tailwindcss-animated";
+:root {
+  font-family: system-ui, "Montserrat", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --my-gradient: linear-gradient(to right, #ec4899, #ef4444, #f97316);
+}
+
+body {
+  margin: 0;
+  font-family: "Source Sans Pro", "Helvetica", sans-serif;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  /*font-size: 3.2em;*/
+  line-height: 1.1;
+}
+
+h1, h2, h3, h4{
+  font-family: "Montserrat", sans-serif;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.vanilla:hover {
+  filter: drop-shadow(0 0 2em #f7df1eaa);
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.custom-gradient-text {
+  background: var(--my-gradient);
+  background-clip: text;
+  color: transparent;
+}
+
+.custom-gradient-bg {
+  background: var(--my-gradient);
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+@keyframes drop-in-out {
+  0% {
+    transform: translateY(-20px); /* Start above */
+    opacity: 0;
+  }
+  25% {
+    transform: translateY(0); /* Enter smoothly */
+    opacity: 1;
+  }
+  75% {
+    transform: translateY(0); /* Stay in place */
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(20px); /* Exit smoothly */
+    opacity: 0;
+  }
+}
+
+/* Class for the text cycling animation */
+.animate-drop {
+  animation: drop-in-out 4s ease-in-out infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.skills-track {
+  min-width: 100%;
+  animation: scroll 15s linear 0s infinite;
+  animation-play-state: running;
+  animation-delay: 0s;
+  animation-direction: normal;
+}
+
+.skills-container:hover .skills-track {
+  animation-play-state: paused;
+}
+
+/* Specific delays for the other spans to ensure they cycle at different times */
+.text_2 {
+  animation-delay: 4s;
+}
+
+.text_3 {
+  animation-delay: 8s;
+}
+
+.text_4 {
+  animation-delay: 12s;
+}
+
+/* Container for the image */
+.image-gradient-border-container {
+  display: inline-block; /* To contain the image */
+  border-radius: 50%; /* Make the container round */
+  padding: 6px; /* Padding for the border effect */
+  position: relative; /* Ensure we can control the gradient position */
+  overflow: hidden; /* Ensure the image stays inside the rounded container */
+  background: transparent; /* No background for the container */
+  box-sizing: border-box; /* Ensure padding is included in the container size */
+  transition: all 0.3s ease-in-out; /* Smooth transition for all effects */
+  border: 4px solid transparent; /* Create space for the gradient */
+}
+
+/* Image inside the container */
+.image-gradient-border {
+  border-radius: 50%; /* Make the image round */
+  width: 100%; /* Fill the container */
+  height: 100%; /* Fill the container */
+  object-fit: cover; /* Ensure the image fits in the circle */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for zooming */
+  transform-origin: center; /* Zoom from the center of the image */
+  will-change: transform; /* Optimizes performance during transform */
+}
+
+/* Apply gradient border on hover */
+.image-gradient-border-container:hover {
+  box-shadow: 0 0 0 10px transparent; /* Remove default border and ensure the hover works */
+  background-image: linear-gradient(to right, #ec4899, #f87171, #fb923c); /* Gradient border */
+  background-origin: border-box; /* Ensure the gradient is applied to the border */
+  background-clip: border-box; /* Clip the gradient to the border box */
+}
+
+/* Optional: Apply hover effects to enhance the border */
+.image-gradient-border-container:hover .image-gradient-border {
+  transform: scale(1.05); /* Slight zoom-in effect */
+}

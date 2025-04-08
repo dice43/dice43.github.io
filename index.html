@@ -1,0 +1,407 @@
+<!doctype html>
+<html class="scroll-smooth h-auto overflow-y-auto scroll-p-2" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>Vite App</title>
+  </head>
+  <body class="bg-neutral-900 bg-cover bg-scroll h-auto w-auto min-h-screen flex flex-col m-0 " id="home">
+    <!--NAVBAR-->
+    <nav class="sticky top-5 bg-neutral-900 bg-transparent backdrop-blur-md border-2 border-neutral-700 rounded-full m-5 p-0 l-50% z-1000 w-fit flex justify-center resize-x hover:scale-105 transition duration-300 ease">
+      <ul class="list-none flex justify-center m-0 p-2 gap-6">
+        <li class="inline"><a href="#home" class="p-1"><i class="fa-solid fa-house text-red-400 text-2xl hover:scale-120 transition duration-300 ease"></i></a></li>
+        <li class="inline"><a href="#about" class="p-1"><i class="fa-solid fa-id-card text-red-400 text-2xl hover:scale-120 transition duration-300 ease"></i></a></li>
+        <li class="inline"><a href="#skills" class="p-1"><i class="fa-solid fa-screwdriver-wrench text-red-400 text-2xl hover:scale-120 transition duration-300 ease"></i></a></li>
+        <li class="inline"><a href="#projects" class="p-1"><i class="fa-solid fa-file-code text-red-400 text-2xl hover:scale-120 transition duration-300 ease"></i></a></li>
+        <li class="inline"><a href="https://www.linkedin.com/in/migueljjones43" class="p-1"><i class="fa-brands fa-linkedin-in text-red-400 text-2xl hover:scale-120 transition duration-300 ease"></i></a></li>
+        <li class="inline"><a href="https://www.github.com/dice43" class="p-1"><i class="fa-brands fa-github text-red-400 text-2xl hover:scale-120 transition duration-300 ease"></i></a></li>
+      </ul>
+    </nav>
+
+    <main class="flex-grow w-full pb-4">
+      <!--HERO SECTION-->
+      <section class="items-center justify-center text-center m-10 py-5" id="hero">
+        <div class="px-4 py-4 md:px-8 max-w-screen-lg mx-auto">
+          <h1 class="text-3xl sm:text-5xl md:text-7xl text-gray-100 font-bold">Hi!</h1>
+          <h1 class="text-3xl sm:text-5xl md:text-7xl text-gray-100 font-bold">I'm Miguel,</h1>
+          <div id="text-container" class="mt-4 text-xl sd:text-3xl md:text-5xl flex font-medium relative mx-auto items-center justify-center p-4">
+            <span class="absolute text_1 custom-gradient-text min-h-[4rem] w-full">a Software Engineer</span>
+            <span class="absolute text_2 opacity-0 custom-gradient-text min-h-[4rem] w-full">a Frontend Developer</span>
+            <span class="absolute text_2 opacity-0 custom-gradient-text min-h-[4rem] w-full">a UI/UX Designer</span>
+            <span class="absolute text_2 opacity-0 custom-gradient-text min-h-[4rem] w-full">a Networking/Security Buff</span>
+            <span class="absolute text_3 opacity-0 custom-gradient-text min-h-[4rem] w-full">an Aspiring Pentester</span>
+          </div>
+        </div>
+        
+        <div class="button-container flex items-center justify-center gap-4">
+          <a href="https://www.linkedin.com/in/migueljjones43" class="button linkedin">
+            <button class="custom-gradient-bg inline-flex items-center justify-center text-center h-12 rounded-2xl hover:scale-105 group transition duration-300 ease">
+              <div class="flex items-center justify-center w-36 l-48 gap-1 m-1 cursor-pointer">
+                <p class="text-white">Let's Connect</p> 
+                <img class="w-6 h-6 group-hover:animate-wiggle-more" src="./src/assets/icons/hand-wave.png"></img>
+              </div>
+            </button>
+          </a>
+    
+          <a href="/assets/pdfs/Miguel Jones Resume March 2025.pdf" class="button resume">
+            <button class="custom-gradient-bg inline-flex items-center justify-center text-center h-12 rounded-2xl hover:scale-105 group transition duration-300 ease">
+              <div class="flex items-center justify-center w-36 l-48 gap-1 m-1 cursor-pointer">
+                <p class="text-white">Resume</p>
+                <img class="w-6 h-6 group-hover:animate-jump" src="./src/assets/icons/download-arrow.png"></img>
+              </div>
+            </button>
+          </a>
+        </div>
+      </section>
+    <!--ABOUT SECTION-->
+      <section id="about" class="p-15 mt-140 mx-2 px-4">
+        <div class="flex gap-4 mb-7 lg:mb-12 items-center justify-center">  
+          <h2 class="text-2xl md:text-4xl lg:text-6xl text-gray-100 font-bold text-center">About Me</h2>
+          <div class="border-b-[3px] flex-1 border-red-400 min-w-16 max-w-30"></div>
+          <i class="fa-solid fa-id-card sm:text-3xl md:text-4xl ld:text-5xl text-gray-100"></i>
+        </div>
+        <div class="flex items-center justify-center gap-40 mx-15 overflow-x-hidden">
+          <div data-animate="fade-left" class="rounded-full w-100 h-100 object-cover shrink-0 transition-all duration-1000 ease-in-out transform opacity-0 -translate-x-full flex justify-center items-center">
+            <img src="./src/assets/images/miguel-mic.jpg" class="rounded-full w-80 h-80 object-cover shrink-0 border-3 border-transparent hover:border-gradient-to-r hover:border-pink-500 hover:border-red-400 hover:scale-105 transition-transform duration-300">
+          </div>
+          <div data-animate="fade-right" class="flex flex-col w-150 justify-start space-y-2 opacity-0 translate-x- transition-all duration-1000 ease-in-out overflow-x-hidden">
+            <p class="text-lg text-gray-300 leading-relaxed">
+              Hi, I'm Miguel, a dedicated Software Developer with a focus on <span class="font-bold">web development</span> and <span class="font-bold">security</span>.
+              I enjoy building interactive, easy-to-use, and dynamic applications.
+            </p>
+            <p class="text-lg text-gray-300 mt-4">
+              I graduated with my <span class="font-bold">B.S.</span> in <span class= "font-bold">Computer Science</span> from William & Mary</span> in <span class="font-bold">2024</span>. 
+              Continuing my learning, I studied for and passed CompTIA's SY0-701 <span class="font-bold">Security+</span> and N10-009 <span class="font-bold">Network+</span> 
+              in August 2024 and February 2025, respectively.
+            </p>
+          </div>
+        </div>
+      </section>
+    <!--SKILLS SECTION-->
+      <section id="skills" class="p-15 mx-2 px-4">
+        <div class="skills-header flex gap-4 mb-7 lg:mb-12 items-center justify-center">
+          <h2 class="text-2xl md:text-4xl lg:text-6xl text-gray-100 font-bold text-center">Skills</h2>
+          <div class="border-b-[3px] flex-1 border-red-400 min-w-16 max-w-30"></div>
+          <i class="fa-solid fa-screwdriver-wrench sm:text-3xl md:text-4xl ld:text-5xl text-gray-100"></i>
+        </div>
+
+        <div data-animate="fade-back" class="py-8 px-[12%] w-full max-sm:px-[5%] opacity-0 scale-75 transition-all duration-700 ease-in-out">
+          <div class="max-w-6xl mx-auto px-4 mt-8 mx-sm:max-w-full max-sm:p-0">
+            <div class="skills-container overflow-x-hidden flex flex-row relative w-full transform-none">
+              <div class="skills-track flex-[0_0_auto] flex min-w-full z-1 flex-row items-center">
+                <div class="skills-child-container flex-[0_0_auto] flex min-w-auto flex-row items-center">
+                  <div class="skills-child transform-none">
+                    <div class="skill-card flex flex-col items-center justify-center bg-neutral-800 w-32 h-32 p-4 m-2 relative shadow-sm border border-white/5 rounded-md text-gray-300 border-2 border-transparent hover:border-gradient-to-r hover:border-pink-500 hover:border-red-400 hover:scale-105 transition-transform duration-300">
+                      <div class="absolute -top-[1px] left-0 w-full h-[1px]  bg-gradient-to-r from-transparent from-pink-500 via-red-500 to-orange-500 to-transparent"></div>
+                      <img alt="Python" loading="lazy" src="./src/assets/icons/python-icon.png" class="w-16 h-16 object-contain"></img>
+                      <h3 class="text-center mt-2 text-sm text-bold">Python</h3>
+                    </div>
+                  </div>
+                  <div class="skills-child transform-none">
+                    <div class="skill-card flex flex-col items-center justify-center bg-neutral-800 w-32 h-32 p-4 m-2 relative shadow-sm border border-white/5 rounded-md text-gray-300 border-2 border-transparent hover:border-gradient-to-r hover:border-pink-500 hover:border-red-400 hover:scale-105 transition-transform duration-300">
+                      <div class="absolute -top-[1px] left-0 w-full h-[1px] bg-gradient-to-r from-transparent from-pink-500 via-red-500 to-orange-500 to-transparent"></div>
+                      <img alt="Java" loading="lazy" src="./src/assets/icons/java-icon.png" class="w-16 h-16 object-contain"></img>
+                      <h3 class="text-center mt-2 text-sm text-bold">Java</h3>
+                    </div>
+                  </div>
+                  <div class="skills-child transform-none">
+                    <div class="skill-card flex flex-col items-center justify-center bg-neutral-800 w-32 h-32 p-4 m-2 relative shadow-sm border border-white/5 rounded-md text-gray-300 border-2 border-transparent hover:border-gradient-to-r hover:border-pink-500 hover:border-red-400 hover:scale-105 transition-transform duration-300">
+                      <div class="absolute -top-[1px] left-0 w-full h-[1px] bg-gradient-to-r from-transparent from-pink-500 via-red-500 to-orange-500 to-transparent"></div>
+                      <img alt="HTML" loading="lazy" src="./src/assets/icons/html-icon.png" class="w-16 h-16 object-contain"></img>
+                      <h3 class="text-center mt-2 text-sm text-bold">HTML</h3>
+                    </div>
+                  </div>
+                  <div class="skills-child transform-none">
+                    <div class="skill-card flex flex-col items-center justify-center bg-neutral-800 w-32 h-32 p-4 m-2 relative shadow-sm border border-white/5 rounded-md text-gray-300 border-2 border-transparent hover:border-gradient-to-r hover:border-pink-500 hover:border-red-400 hover:scale-105 transition-transform duration-300">
+                      <div class="absolute -top-[1px] left-0 w-full h-[1px] bg-gradient-to-r from-transparent from-pink-500 via-red-500 to-orange-500 to-transparent"></div>
+                      <img alt="CSS" loading="lazy" src="./src/assets/icons/css-icon.png" class="w-16 h-16 object-contain"></img>
+                      <h3 class="text-center mt-2 text-sm text-bold">CSS</h3>
+                    </div>
+                  </div>
+                  <div class="skills-child transform-none">
+                    <div class="skill-card flex flex-col items-center justify-center bg-neutral-800 w-32 h-32 p-4 m-2 relative shadow-sm border border-white/5 rounded-md text-gray-300 border-2 border-transparent hover:border-gradient-to-r hover:border-pink-500 hover:border-red-400 hover:scale-105 transition-transform duration-300">
+                      <div class="absolute -top-[1px] left-0 w-full h-[1px] bg-gradient-to-r from-transparent from-pink-500 via-red-500 to-orange-500 to-transparent"></div>
+                      <img alt="Tailwind" loading="lazy" src="./src/assets/icons/tailwind-icon.png" class="w-16 h-16 object-contain"></img>
+                      <h3 class="text-center mt-2 text-sm text-bold">Tailwind</h3>
+                    </div>
+                  </div>
+                  <div class="skills-child transform-none">
+                    <div class="skill-card flex flex-col items-center justify-center bg-neutral-800 w-32 h-32 p-4 m-2 relative shadow-sm border border-white/5 rounded-md text-gray-300 border-2 border-transparent hover:border-gradient-to-r hover:border-pink-500 hover:border-red-400 hover:scale-105 transition-transform duration-300">
+                      <div class="absolute -top-[1px] left-0 w-full h-[1px] bg-gradient-to-r from-transparent from-pink-500 via-red-500 to-orange-500 to-transparent"></div>
+                      <img alt="JavaScript" loading="lazy" src="./src/assets/icons/js-icon.png" class="w-16 h-16 object-contain"></img>
+                      <h3 class="text-center mt-2 text-sm text-bold">JavaScript</h3>
+                    </div>
+                  </div>
+                  <div class="skills-child transform-none">
+                    <div class="skill-card flex flex-col items-center justify-center bg-neutral-800 w-32 h-32 p-4 m-2 relative shadow-sm border border-white/5 rounded-md text-gray-300 border-2 border-transparent hover:border-gradient-to-r hover:border-pink-500 hover:border-red-400 hover:scale-105 transition-transform duration-300">
+                      <div class="absolute -top-[1px] left-0 w-full h-[1px] bg-gradient-to-r from-transparent from-pink-500 via-red-500 to-orange-500 to-transparent"></div>
+                      <img alt="React" loading="lazy" src="./src/assets/icons/react-icon.png" class="w-16 h-16 object-contain"></img>
+                      <h3 class="text-center mt-2 text-sm text-bold">React</h3>
+                    </div>
+                  </div>
+                  <div class="skills-child transform-none">
+                    <div class="skill-card flex flex-col items-center justify-center bg-neutral-800 w-32 h-32 p-4 m-2 relative shadow-sm border border-white/5 rounded-md text-gray-300 border-2 border-transparent hover:border-gradient-to-r hover:border-pink-500 hover:border-red-400 hover:scale-105 transition-transform duration-300">
+                      <div class="absolute -top-[1px] left-0 w-full h-[1px] bg-gradient-to-r from-transparent from-pink-500 via-red-500 to-orange-500 to-transparent"></div>
+                      <img alt="Vite" loading="lazy" src="./src/assets/icons/vite.js-icon.png" class="w-16 h-16 object-contain"></img>
+                      <h3 class="text-center mt-2 text-sm text-bold">Vite</h3>                    
+                    </div>
+                  </div>
+                  <div class="skills-child transform-none">
+                    <div class="skill-card flex flex-col items-center justify-center bg-neutral-800 w-32 h-32 p-4 m-2 relative shadow-sm border border-white/5 rounded-md text-gray-300 border-2 border-transparent hover:border-gradient-to-r hover:border-pink-500 hover:border-red-400 hover:scale-105 transition-transform duration-300">
+                      <div class="absolute -top-[1px] left-0 w-full h-[1px] bg-gradient-to-r from-transparent from-pink-500 via-red-500 to-orange-500 to-transparent"></div>
+                      <img alt="Flask" loading="lazy" src="./src/assets/icons/flask-icon.png" class="w-16 h-16 object-contain"></img>
+                      <h3 class="text-center mt-2 text-sm text-bold">Flask</h3>
+                    </div>
+                  </div>
+                  <div class="skills-child transform-none">
+                    <div class="skill-card flex flex-col items-center justify-center bg-neutral-800 w-32 h-32 p-4 m-2 relative shadow-sm border border-white/5 rounded-md text-gray-300 border-2 border-transparent hover:border-gradient-to-r hover:border-pink-500 hover:border-red-400 hover:scale-105 transition-transform duration-300">
+                      <div class="absolute -top-[1px] left-0 w-full h-[1px] bg-gradient-to-r from-transparent from-pink-500 via-red-500 to-orange-500 to-transparent"></div>
+                      <img alt="FastAPI" loading="lazy" src="./src/assets/icons/FastAPI-icon.png" class="w-16 h-16 object-contain"></img>
+                      <h3 class="text-center mt-2 text-sm text-bold">FastAPI</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skills-track flex-[0_0_auto] flex min-w-full z-1 flex-row items-center">
+                <div class="skills-child-container flex-[0 0 auto] flex min-w-auto flex-row items-center">
+                  <div class="skills-child transform-none">
+                    <div class="skill-card flex flex-col items-center justify-center bg-neutral-800 w-32 h-32 p-4 m-2 relative shadow-sm border border-white/5 rounded-md text-gray-300 border-2 border-transparent hover:border-gradient-to-r hover:border-pink-500 hover:border-red-400 hover:scale-105 transition-transform duration-300">
+                      <div class="absolute -top-[1px] left-0 w-full h-[1px]  bg-gradient-to-r from-transparent from-pink-500 via-red-500 to-orange-500 to-transparent"></div>
+                      <img alt="Python" loading="lazy" src="./src/assets/icons/python-icon.png" class="w-16 h-16 object-contain"></img>
+                      <h3 class="text-center mt-2 text-sm text-bold">Python</h3>
+                    </div>
+                  </div>
+                  <div class="skills-child transform-none">
+                    <div class="skill-card flex flex-col items-center justify-center bg-neutral-800 w-32 h-32 p-4 m-2 relative shadow-sm border border-white/5 rounded-md text-gray-300 border-2 border-transparent hover:border-gradient-to-r hover:border-pink-500 hover:border-red-400 hover:scale-105 transition-transform duration-300">
+                      <div class="absolute -top-[1px] left-0 w-full h-[1px] bg-gradient-to-r from-transparent from-pink-500 via-red-500 to-orange-500 to-transparent"></div>
+                      <img alt="Java" loading="lazy" src="./src/assets/icons/java-icon.png" class="w-16 h-16 object-contain"></img>
+                      <h3 class="text-center mt-2 text-sm text-bold">Java</h3>
+                    </div>
+                  </div>
+                  <div class="skills-child transform-none">
+                    <div class="skill-card flex flex-col items-center justify-center bg-neutral-800 w-32 h-32 p-4 m-2 relative shadow-sm border border-white/5 rounded-md text-gray-300 border-2 border-transparent hover:border-gradient-to-r hover:border-pink-500 hover:border-red-400 hover:scale-105 transition-transform duration-300">
+                      <div class="absolute -top-[1px] left-0 w-full h-[1px] bg-gradient-to-r from-transparent from-pink-500 via-red-500 to-orange-500 to-transparent"></div>
+                      <img alt="HTML" loading="lazy" src="./src/assets/icons/html-icon.png" class="w-16 h-16 object-contain"></img>
+                      <h3 class="text-center mt-2 text-sm text-bold">HTML</h3>
+                    </div>
+                  </div>
+                  <div class="skills-child transform-none">
+                    <div class="skill-card flex flex-col items-center justify-center bg-neutral-800 w-32 h-32 p-4 m-2 relative shadow-sm border border-white/5 rounded-md text-gray-300 border-2 border-transparent hover:border-gradient-to-r hover:border-pink-500 hover:border-red-400 hover:scale-105 transition-transform duration-300">
+                      <div class="absolute -top-[1px] left-0 w-full h-[1px] bg-gradient-to-r from-transparent from-pink-500 via-red-500 to-orange-500 to-transparent"></div>
+                      <img alt="CSS" loading="lazy" src="./src/assets/icons/css-icon.png" class="w-16 h-16 object-contain"></img>
+                      <h3 class="text-center mt-2 text-sm text-bold">CSS</h3>
+                    </div>
+                  </div>
+                  <div class="skills-child transform-none">
+                    <div class="skill-card flex flex-col items-center justify-center bg-neutral-800 w-32 h-32 p-4 m-2 relative shadow-sm border border-white/5 rounded-md text-gray-300 border-2 border-transparent hover:border-gradient-to-r hover:border-pink-500 hover:border-red-400 hover:scale-105 transition-transform duration-300">
+                      <div class="absolute -top-[1px] left-0 w-full h-[1px] bg-gradient-to-r from-transparent from-pink-500 via-red-500 to-orange-500 to-transparent"></div>
+                      <img alt="Tailwind" loading="lazy" src="./src/assets/icons/tailwind-icon.png" class="w-16 h-16 object-contain"></img>
+                      <h3 class="text-center mt-2 text-sm text-bold">Tailwind</h3>
+                    </div>
+                  </div>
+                  <div class="skills-child transform-none">
+                    <div class="skill-card flex flex-col items-center justify-center bg-neutral-800 w-32 h-32 p-4 m-2 relative shadow-sm border border-white/5 rounded-md text-gray-300 border-2 border-transparent hover:border-gradient-to-r hover:border-pink-500 hover:border-red-400 hover:scale-105 transition-transform duration-300">
+                      <div class="absolute -top-[1px] left-0 w-full h-[1px] bg-gradient-to-r from-transparent from-pink-500 via-red-500 to-orange-500 to-transparent"></div>
+                      <img alt="JavaScript" loading="lazy" src="./src/assets/icons/js-icon.png" class="w-16 h-16 object-contain"></img>
+                      <h3 class="text-center mt-2 text-sm text-bold">JavaScript</h3>
+                    </div>
+                  </div>
+                  <div class="skills-child transform-none">
+                    <div class="skill-card flex flex-col items-center justify-center bg-neutral-800 w-32 h-32 p-4 m-2 relative shadow-sm border border-white/5 rounded-md text-gray-300 border-2 border-transparent hover:border-gradient-to-r hover:border-pink-500 hover:border-red-400 hover:scale-105 transition-transform duration-300">
+                      <div class="absolute -top-[1px] left-0 w-full h-[1px] bg-gradient-to-r from-transparent from-pink-500 via-red-500 to-orange-500 to-transparent"></div>
+                      <img alt="React" loading="lazy" src="./src/assets/icons/react-icon.png" class="w-16 h-16 object-contain"></img>
+                      <h3 class="text-center mt-2 text-sm text-bold">React</h3>
+                    </div>
+                  </div>
+                  <div class="skills-child transform-none">
+                    <div class="skill-card flex flex-col items-center justify-center bg-neutral-800 w-32 h-32 p-4 m-2 relative shadow-sm border border-white/5 rounded-md text-gray-300 border-2 border-transparent hover:border-gradient-to-r hover:border-pink-500 hover:border-red-400 hover:scale-105 transition-transform duration-300">
+                      <div class="absolute -top-[1px] left-0 w-full h-[1px] bg-gradient-to-r from-transparent from-pink-500 via-red-500 to-orange-500 to-transparent"></div>
+                      <img alt="Vite" loading="lazy" src="./src/assets/icons/vite.js-icon.png" class="w-16 h-16 object-contain"></img>
+                      <h3 class="text-center mt-2 text-sm text-bold">Vite</h3>                    
+                    </div>
+                  </div>
+                  <div class="skills-child transform-none">
+                    <div class="skill-card flex flex-col items-center justify-center bg-neutral-800 w-32 h-32 p-4 m-2 relative shadow-sm border border-white/5 rounded-md text-gray-300 border-2 border-transparent hover:border-gradient-to-r hover:border-pink-500 hover:border-red-400 hover:scale-105 transition-transform duration-300">
+                      <div class="absolute -top-[1px] left-0 w-full h-[1px] bg-gradient-to-r from-transparent from-pink-500 via-red-500 to-orange-500 to-transparent"></div>
+                      <img alt="Flask" loading="lazy" src="./src/assets/icons/flask-icon.png" class="w-16 h-16 object-contain"></img>
+                      <h3 class="text-center mt-2 text-sm text-bold">Flask</h3>
+                    </div>
+                  </div>
+                  <div class="skills-child transform-none">
+                    <div class="skill-card flex flex-col items-center justify-center bg-neutral-800 w-32 h-32 p-4 m-2 relative shadow-sm border border-white/5 rounded-md text-gray-300 border-2 border-transparent hover:border-gradient-to-r hover:border-pink-500 hover:border-red-400 hover:scale-105 transition-transform duration-300">
+                      <div class="absolute -top-[1px] left-0 w-full h-[1px] bg-gradient-to-r from-transparent from-pink-500 via-red-500 to-orange-500 to-transparent"></div>
+                      <img alt="FastAPI" loading="lazy" src="./src/assets/icons/FastAPI-icon.png" class="w-16 h-16 object-contain"></img>
+                      <h3 class="text-center mt-2 text-sm text-bold">FastAPI</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--PROJECTS SECTION-->
+      <section id="projects" class="py-16 bg-neutral-900">
+        <div class="skills-header flex gap-4 mb-7 lg:mb-12 items-center justify-center">
+          <h2 class="text-2xl md:text-4xl lg:text-6xl text-gray-100 font-bold text-center">Projects</h2>
+          <div class="border-b-[3px] flex-1 border-red-400 min-w-16 max-w-30"></div>
+          <i class="fa-solid fa-file-code sm:text-3xl md:text-4xl ld:text-5xl text-gray-100"></i>
+        </div>
+        <div data-animate="fade-back" class="max-w-6xl mx-auto px-4 opacity-0 scale-75 transition-all duration-700 ease-in-out">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Project Card 1 -->
+            <div class="project-card group relative bg-neutral-800 text-gray-300 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 border-2 border-transparent hover:border-gradient-to-r hover:border-pink-500 hover:border-red-400 group">
+              <img src="./src/assets/images/portfolio-screenshot.png" alt="Project 1" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-4">My Portfolio</h3>
+                <p class="text-sm text-gray-400 mb-4">A minimalist portfolio website showcasing my skills and projects.</p>
+                
+                <!-- Tech Tags -->
+                <div class="flex flex-wrap mb-4">
+                  <span class="bg-pink-500 text-white text-sm font-medium rounded-full py-1 px-2 mr-2 mb-2">HTML</span>
+                  <span class="bg-blue-500 text-white text-sm font-medium rounded-full py-1 px-2 mr-2 mb-2">CSS</span>
+                  <span class="bg-yellow-500 text-white text-sm font-medium rounded-full py-1 px-2 mr-2 mb-2">JavaScript</span>
+                  <span class="bg-orange-500 text-white text-sm font-medium rounded-full py-1 px-2 mr-2 mb-2">Tailwind</span>
+                </div>
+                
+                <!-- Links -->
+                <div class="absolute bottom-4 left-4">
+                  <a href="https://github.com/dice43/tailwindPortfolio" target="_blank" class="text-pink-500 hover:underline text-sm">View Code on GitHub</a>
+                </div>
+                <div class="absolute bottom-4 right-4">
+                  <a href="https://dice43.github.io" target="_blank" class="text-pink-500 hover:underline text-sm">Live Demo</a>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Project Card 2 -->
+            <div class="project-card group relative bg-neutral-800 text-gray-300 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 border-2 border-transparent hover:border-gradient-to-r hover:border-pink-500 hover:border-red-400 group">
+              <video id="videoPlayer" width="640" height="360" controls>
+                <source src="./src/assets/videos/GalerasMP4.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-4">Galeras</h3>
+                <p class="text-sm text-gray-400 mb-4">This is a web app created to host the LLM testing benchmark Galeras. This project's repository is now private, but I've provided an example video.</p>
+                
+                <!-- Tech Tags -->
+                <div class="flex flex-wrap mb-4">
+                  <span class="bg-pink-500 text-white text-sm font-medium rounded-full py-1 px-2 mr-2 mb-2">HTML</span>
+                  <span class="bg-blue-500 text-white text-sm font-medium rounded-full py-1 px-2 mr-2 mb-2">CSS</span>
+                  <span class="bg-yellow-500 text-white text-sm font-medium rounded-full py-1 px-2 mr-2 mb-2">JavaScript</span>
+                  <span class="bg-green-500 text-white text-sm font-medium rounded-full py-1 px-2 mr-2 mb-2">Python</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="project-card group relative bg-neutral-800 text-gray-300 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 border-2 border-transparent hover:border-gradient-to-r hover:border-pink-500 hover:border-red-400 group">
+              <img src="./src/assets/images/cat-fact-tracker.png" alt="Cat Fact Tracker" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-4">Cat Fact Tracker</h3>
+                <p class="text-sm text-gray-400 mb-4">A website that displays random cat facts.</p>
+                
+                <!-- Tech Tags -->
+                <div class="flex flex-wrap mb-4">
+                  <span class="bg-pink-500 text-white text-sm font-medium rounded-full py-1 px-2 mr-2 mb-2">HTML</span>
+                  <span class="bg-blue-500 text-white text-sm font-medium rounded-full py-1 px-2 mr-2 mb-2">CSS</span>
+                  <span class="bg-green-500 text-white text-sm font-medium rounded-full py-1 px-2 mr-2 mb-2">Python</span>
+                  <span class="bg-yellow-500 text-white text-sm font-medium rounded-full py-1 px-2 mr-2 mb-2">JavaScript</span>
+                  <span class="bg-orange-500 text-white text-sm font-medium rounded-full py-1 px-2 mr-2 mb-2">Tailwind</span>
+                  <span class="bg-teal-500 text-white text-sm font-medium rounded-full py-1 px-2 mr-2 mb-2">FastAPI</span>
+                </div>
+                
+                <!-- Links -->
+                <div class="absolute bottom-4 left-4">
+                  <a href="https://github.com/dice43/CatFactTracker" target="_blank" class="text-pink-500 hover:underline text-sm">View Code on GitHub</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Card 4 -->
+            <div class="project-card group relative bg-neutral-800 text-gray-300 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 border-2 border-transparent hover:border-gradient-to-r hover:border-pink-500 hover:border-red-400 group">
+              <img src="./src/assets/images/internetCookbook.png" alt="Internet Cookbook" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-4">Internet Cookbook</h3>
+                <p class="text-sm text-gray-400 mb-4">A website that allows users to search up and save recipes. This is an older website that I am refactoring. WIP!</p>
+                
+                <!-- Tech Tags -->
+                <div class="flex flex-wrap mb-4">
+                  <span class="bg-pink-500 text-white text-sm font-medium rounded-full py-1 px-2 mr-2 mb-2">HTML</span>
+                  <span class="bg-blue-500 text-white text-sm font-medium rounded-full py-1 px-2 mr-2 mb-2">CSS</span>
+                  <span class="bg-green-500 text-white text-sm font-medium rounded-full py-1 px-2 mr-2 mb-2">Python</span>
+                  <span class="bg-violet-500 text-white text-sm font-medium rounded-full py-1 px-2 mr-2 mb-2">Flask</span>
+                  <span class="bg-red-500 text-white text-sm font-medium rounded-full py-1 px-2 mr-2 mb-2">SQL</span>
+                </div>
+                
+                <!-- Links -->
+                <div class="absolute bottom-4 left-4">
+                  <a href="https://github.com/dice43/internetCookbookRefactor" target="_blank" class="text-pink-500 hover:underline text-sm">View Code on GitHub</a>
+                </div>
+                <div class="absolute bottom-4 right-4">
+                  <a href="https://internetcookbookrefactor.onrender.com/" target="_blank" class="text-pink-500 hover:underline text-sm">Live Demo</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Card 5 -->
+            <div class="project-card group relative bg-neutral-800 text-gray-300 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 border-2 border-transparent hover:border-gradient-to-r hover:border-pink-500 hover:border-red-400 group">
+              <img src="./src/assets/images/leaf-highlight.png" alt="Leaf Highlight" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-4">Leaf Highlight</h3>
+                <p class="text-sm text-gray-400 mb-4">A program that highlights android leaf components from screenshots.</p>
+                
+                <!-- Tech Tags -->
+                <div class="flex flex-wrap mb-4">
+                  <span class="bg-green-500 text-white text-sm font-medium rounded-full py-1 px-2 mr-2 mb-2">Python</span>
+                </div>
+                
+                <!-- Links -->
+                <div class="absolute bottom-4 left-4">
+                  <a href="https://github.com/dice43/leaf_highlight" target="_blank" class="text-pink-500 hover:underline text-sm">View Code on GitHub</a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Project Card 6 -->
+            <div class="project-card group relative bg-neutral-800 text-gray-300 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 border-2 border-transparent hover:border-gradient-to-r hover:border-pink-500 hover:border-red-400 group">
+              <img src="./src/assets/images/autoCue.png" alt="Auto Cue" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-4">Auto Cue</h3>
+                <p class="text-sm text-gray-400 mb-4">A automation script for SeratoDJ Pro to set cue points on songs.</p>
+                
+                <!-- Tech Tags -->
+                <div class="flex flex-wrap mb-4">
+                  <span class="bg-green-500 text-white text-sm font-medium rounded-full py-1 px-2 mr-2 mb-2">Python</span>
+                </div>
+                
+                <!-- Links -->
+                <div class="absolute bottom-4 left-4">
+                  <a href="https://github.com/dice43/autoCue" target="_blank" class="text-pink-500 hover:underline text-sm">View Code on GitHub</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-neutral-900 bg-transparent text-gray-300 p-5 text-center m-auto b-0 w-full flex-shrink-0 z-1">
+      <p class="">&copy; 2025 Miguel Jones | All Rights Reserved</p>
+        <div class="social-icons text-3xl flex items-center justify-center gap-5">
+            <a href="mailto:migueljjones43@gmail.com"><i class="fas fa-envelope hover:animate-jump"></i></a>
+            <a href="https://github.com/dice43" target="_blank"><i class="fab fa-github hover:animate-jump"></i></a>
+            <a href="https://www.linkedin.com/in/migueljjones43"><i class="fa-brands fa-linkedin hover:animate-jump"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/8d1ab0b62b.js" crossorigin="anonymous"></script>
+    <script type="module" src="./src/utils/subheading-cycle.js"></script>
+    <script type="module" src="./src/utils/aboutAnimateDetect.js"></script>
+  </body>
+</html>
